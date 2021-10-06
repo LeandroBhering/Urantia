@@ -1,45 +1,53 @@
-@charset="utf-8";
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 *{
 	margin: 0;
 	padding: 0;
 }
 
-body { background-color: #000; }
-
-header#cabecalho {
-	background-color: #08649E;
-	padding: 15px;
+body { 
+	background-color: rgb(1, 4, 39); 
 }
 
-header#cabecalho h1 {
-    font-family: lobster; sans-serif; 
+.cabecalho {
+	display: flex;
+	justify-content: space-between;
+	background-color: #08649E;
+	padding: 10px;
+}
+
+.logo{
+	width: 300px;
+	text-align: center;
+    font-family: 'Kaushan Script', cursive; 
     color: #CCE8F8;
-    margin-left: 30px;
     text-shadow: 1px 1px 3px #000;
 }
 
 /* FORMATAÇÃO MENU */
 
-nav#menu {
-	display: inline;
-	list-style: none;
-	position: absolute;
-	top: 20px;
-	right: 90px;
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 }
 
-nav#menu a {
+.menu a {
+	width: 80px;
+	height: 100%;
+	text-align: center;
 	font-family: 'Acme', sans-serif;
-	padding: 5px 10px 5px 10px;
-	margin-right: 10px;
+	padding: 5px 15px;
 	text-shadow: 1px 1px 3px #000;
 	text-decoration: none;
 	color: #139BE2;
 	font-size: 15pt;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
 }
 
-nav#menu a:hover {
+.menu a:hover {
 	background-color: #139BE2;
 	color: #CCE8F8;
 }
