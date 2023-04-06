@@ -98,6 +98,7 @@ article#introducao p {
 
 section#sessao {
 	display: flex;
+	background-image: linear-gradient(#000000, rgb(1, 1, 104));
 }
 
 section#sessao h1 {
@@ -122,7 +123,6 @@ section#sessao h1 {
 
 .artigo {
 	width: 400px;
-	height: 500px;
 	background-color: #08649E;
     margin: 20px;
     padding: 15px;
